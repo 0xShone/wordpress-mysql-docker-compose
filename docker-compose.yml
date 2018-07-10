@@ -1,0 +1,22 @@
+version: '3.1'
+services:
+    wordpress:
+        image: wordpress
+        restart: always
+        ports:
+            - "8080:80"
+        depends_on:
+            - db
+        environment:
+            WORDPRESS_DB_HOST: "db:3306"
+        env_file: .env
+    db:
+        image: mysql:5.7
+        restart: always
+        env_file: .env
+        volumes:
+            - db-data:/var/lib/mysql
+
+# from: https://docs.docker.com/compose/compose-file/#volume-configuration-reference
+volumes:
+    db-data:
