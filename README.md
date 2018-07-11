@@ -3,6 +3,10 @@
 ## Run
 `$ cd [this repository]`
 
+Create `.env` file from `.env.sample` and edit you like.
+`$ cp .env.sample .env`
+
+Start docker-compose
 `$ docker-compose up`
 
 
