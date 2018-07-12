@@ -1,7 +1,7 @@
 # wordpress-mysql-docker-compose
 
 ## Run
-#### Create `.env` file from `.env.sample` and edit you like.
+#### Create `.env` file from `.env.sample` and edit as you like.
 ```shell
 $ cp .env.sample .env
 ```
